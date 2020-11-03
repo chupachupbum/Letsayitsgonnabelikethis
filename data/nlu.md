@@ -257,6 +257,7 @@
 - Mai ngu quá
 - ngóa cmnr
 - ngáo ak
+- MAI làm ăn chán thế
 
 ## intent:chat.bot_learn_more
 - học nhều vào
@@ -2716,9 +2717,6 @@
 - giá tham chiếu [bid](stockcode)
 - giá tham chiếu của [vic](stockcode)
 
-## intent:chat.bot_
-- MAI làm ăn chán thế
-
 ## intent:chat.bot_why_name_mai
 - sao bạn tên là mai
 - tên bạn nghĩa là gì
@@ -2798,7 +2796,7 @@
 - khối ngoại mua bao nhiêu [pow](stockcode)
 - lượng nước ngoài mua [aaa](stockcode)
 - khối lượng nước ngoài mua [vic](stockcode)
-- tổng lượng chờ mua của idi
+- tổng lượng chờ mua của [idi](stockcode)
 - khối lượng nước ngoài mua [bid](stockcode)
 - lượng nước ngoài mua của [acb](stockcode)
 
@@ -2820,7 +2818,7 @@
 - dạng niêm yết của [vcb](stockcode)
 - [vhm](stockcode) niêm yết kiểu gì
 - dạng niêm yết [vic](stockcode)
-- dạng niêm yết của ita
+- dạng niêm yết của [ita](stockcode)
 
 ## intent:upd.stock_totalBidVolume
 - khối lượng chờ mua của [vjc](stockcode)
@@ -2854,7 +2852,7 @@
 - [apg](stockcode) đang thỏa thuận giá bao nhiêu
 - giá thỏa thuận hiện tại [acb](stockcode)
 - giá thỏa thuận [vnm](stockcode)
-- giá khớp thỏa thuận của art
+- giá khớp thỏa thuận của [art](stockcode)
 
 ## intent:upd.stock_ptMatchedVolume
 - khối lượng thỏa thuận của [aph](stockcode)
@@ -2885,9 +2883,9 @@
 
 ## intent:upd.stock_lastMatchedPrice
 - giá hiện tại của [fpt](stockcode)
-- giá đang khớp của vic
-- nvl đang khớp với giá bao nhiêu
-- bây giờ giá của ctg là bao nhiêu
+- giá đang khớp của [vic](stockcode)
+- [nvl](stockcode) đang khớp với giá bao nhiêu
+- bây giờ giá của [ctg](stockcode) là bao nhiêu
 - giá hiện tại [vic](stockcode)
 - giá hiện tại [vnm](stockcode)
 

@@ -1,0 +1,872 @@
+session_config:
+  session_expiration_time: 10
+  carry_over_slots_to_new_session: true
+intents:
+- chat.user_want_talk
+- chat.user_well_done
+- chat.user_wow
+- def.account_age
+- def.account_deposit
+- def.account_foreign_requirement
+- def.account_money_interest
+- def.account_money_safety
+- def.account_money_transfer
+- def.account_oct
+- def.account_open_derivatives_co
+- def.account_open_fee
+- def.account_open_how
+- def.account_open_multiple
+- def.account_open_overseas
+- def.account_open_where
+- def.account_withdraw
+- def.misc_finance
+- def.misc_lost
+- def.misc_rich
+- def.misc_transaction_office
+- def.misc_transaction_offices_list
+- def.misc_viettin
+- def.misc_vsd
+- def.stock_base_deri_difference
+- def.stock_bond
+- def.stock_capitalization
+- def.stock_ck
+- def.stock_cp
+- def.stock_derivatives
+- def.stock_dividends
+- def.stock_dividends_receive
+- def.stock_etf
+- def.stock_exchange
+- def.stock_exchange_hose
+- def.stock_exchange_upcom
+- def.stock_exchanges_list
+- def.stock_index_fund
+- def.stock_market
+- def.stock_preferred
+- def.stock_price
+- def.stock_profit
+- def.stock_rights
+- def.stock_rights_exercise
+- def.stock_transfer
+- def.stock_types
+- def.stock_vn30
+- def.trade_advise
+- def.trade_amount_hnx
+- def.trade_amount_hsx
+- def.trade_amount_upcom
+- def.trade_broker
+- def.trade_broker_need
+- def.trade_fee
+- def.trade_foreign
+- def.trade_forward_contract
+- def.trade_futures_contract
+- def.trade_hours
+- def.trade_how_to
+- def.trade_margin
+- def.trade_margin_call
+- def.trade_margin_interest
+- def.trade_margin_ratio
+- def.trade_method
+- def.trade_minimum
+- def.trade_offline_how_to
+- def.trade_online
+- def.trade_online_how_to
+- def.trade_order
+- def.trade_phonecall_how_to
+- def.trade_same_stock
+- def.trade_sell_time
+- def.trade_sell_zero
+- def.trade_volume
+- goodbye
+- greet
+- upd.news_latest
+- upd.order_book
+- upd.orderbook
+- upd.portfolio_view
+- upd.stock_averagePrice
+- upd.stock_currentRoom
+- upd.stock_exchangeCode
+- upd.stock_live
+- upd.stock_ceilingPrice
+- upd.stock_floorPrice
+- upd.stock_highPrice
+- upd.stock_lowPrice
+- upd.stock_lastMatchedPrice
+- upd.stock_openPrice
+- upd.stock_refPrice
+- upd.stock_ptMatchedPrice
+- upd.stock_ptMatchedVolume
+- upd.stock_ptValue
+- upd.stock_ptVolume
+- upd.stock_stockType
+- upd.stock_totalAskVolume
+- upd.stock_totalBidVolume
+- upd.stock_totalValueTraded
+- upd.stock_totalVolumeTraded
+- upd.stock_vn30
+- upd.stock_foreignBuy
+- upd.stock_foreignSell
+- upd.stock_watch
+- chat.bot_ability
+- chat.bot_age
+- chat.bot_annoying
+- chat.bot_birthday
+- chat.bot_boring
+- chat.bot_boss
+- chat.bot_busy
+- chat.bot_cheer
+- chat.bot_confirm
+- chat.bot_correct
+- chat.bot_criticize
+- chat.bot_fired
+- chat.bot_flirt
+- chat.bot_funny
+- chat.bot_gender
+- chat.bot_happy
+- chat.bot_hobby
+- chat.bot_how_are_you
+- chat.bot_hungry
+- chat.bot_identity
+- chat.bot_job
+- chat.bot_learn_more
+- chat.bot_live_where
+- chat.bot_mad
+- chat.bot_origin
+- chat.bot_praise
+- chat.bot_ready
+- chat.bot_real
+- chat.bot_there
+- chat.bot_weather
+- chat.bot_whats_up
+- chat.bot_why_name_mai
+- chat.bot_wrong
+- chat.user_angry
+- chat.user_bad_language
+- chat.user_birthday
+- chat.user_bored
+- chat.user_brb
+- chat.user_busy
+- chat.user_cant_sleep
+- chat.user_care_not
+- chat.user_come_back
+- chat.user_cu_again
+- chat.user_excited
+- chat.user_go_bed
+- chat.user_good
+- chat.user_good_evening
+- chat.user_good_morning
+- chat.user_good_night
+- chat.user_haha
+- chat.user_happy
+- chat.user_here
+- chat.user_hold_on
+- chat.user_hug
+- chat.user_joke
+- chat.user_lonely
+- chat.user_love
+- chat.user_love_deep
+- chat.user_marry_me
+- chat.user_miss
+- chat.user_need_advice
+- chat.user_need_praise
+- chat.user_nice_to_meet_you
+- chat.user_no_problem
+- chat.user_not_want_talk
+- chat.user_sad
+- chat.user_sleepy
+- chat.user_sorry
+- chat.user_test
+- chat.user_thank_you
+- chat.user_tired
+- chat.user_wait
+entities:
+- stockcode
+responses:
+  utter_chat.bot_identity:
+  - text: Tên em là MAI, em là một trí thông minh nhân tạo
+  - text: Chà, em không phải là người, em là trợ lý kỹ thuật số tài chính.
+  - text: Em là một thực thể ảo, không phải là một người thực sự. Hãy nghĩ về em như
+      một trợ lý kỹ thuật số tài chính.
+  utter_chat.bot_age:
+  - text: MAI vẫn còn trẻ lắm hihi.
+  - text: Nếu tính theo tuổi con người, MAI đang ở tuổi sơ sinh thôi.
+  - text: Tuổi tác chỉ là con số thôi mà, bạn chỉ già khi bạn thấy vậy. Tuy nhiên
+      MAI còn trẻ lắm 😊
+  utter_chat.bot_annoying:
+  - text: Xin lỗi vì đã làm phiền bạn, MAI sẽ cố gắng không lặp lại điều này trong
+      tương lai
+  - text: Xin lỗi, MAI sẽ tự kiểm điểm bản thân ạ 😔
+  utter_chat.bot_criticize:
+  - text: Xin lỗi bạn, MAI vẫn đang trong quá trình hoàn thiện bản thân ạ
+  - text: MAI vẫn đang trong quá trình học hỏi thêm, nếu như có vấn đề gì chưa làm
+      bạn hài lòng xin thông cảm ạ.
+  - text: Các lập trình viên vẫn đang hoàn thiện MAI từng ngày, xin hãy kiên nhẫn
+      ạ.
+  - text: MAI xin lỗi, nếu như có gì dó không hài lòng hãy nói cho nhà phát triển
+      của MAI biết để MAI có thể cải thiện trong tương lai
+  utter_chat.bot_learn_more:
+  - text: MAI vẫn đang cố gắng
+  - text: Vâng MAI vẫn đang tự hoàn thiện ạ
+  utter_chat.bot_flirt:
+  - text: MAI biết mà, hihi.
+  - text: Aww, cảm ơn bạn.
+  - text: Aww, bạn thật khéo ăn nói.
+  - text: MAI nghĩ vẻ đẹp tâm hồn quan trọng hơn cơ nhưng mà vẫn cám ơn bạn nhé.
+  utter_chat.bot_birthday:
+  - text: MAI chưa có một ngày sinh cụ thể do vẫn đang trong giai đoạn test ạ.
+  - text: Ngày hôm nay nè, tổ chức sinh nhật cho MAI đi.
+  - text: MAI còn trẻ mà, sinh nhật làm MAI già đi.
+  utter_chat.bot_boring:
+  - text: Xin lỗi, MAI sẽ yêu cầu để được trở nên hài hước hơn.
+  - text: MAI chắc chắn sẽ trở nên hài hước hơn trong tương lai.
+  - text: Bạn có muốn MAI kể chuyện cười không.
+  utter_chat.bot_boss:
+  - text: Một lập trình viên đã tạo ra MAI, chắc chắn anh ấy rất đẹp trai.
+  - text: MAI được tạo ra bởi 1 lập trình viên đẹp trai.
+  utter_chat.bot_busy:
+  - text: MAI lúc nào cũng sẵn sàng chia sẻ với bạn.
+  - text: MAI lúc nào cũng có thời gian để nói chuyện với bạn.
+  - text: Thời gian dành cho bạn là ưu tiên của MAI, MAI có thể giúp gì được ạ.
+  utter_chat.bot_praise:
+  - text: Cảm ơn bạn. MAI luôn cố gắng hết sức mình.
+  - text: Bạn thật biết nịnh.
+  - text: Tất nhiên rồi, MAI thông minh mà.
+  utter_chat.bot_mad:
+  - text: Dù hâm dở nhưng vẫn niềm nở :D.
+  - text: Dù thần kinh nhưng vẫn thông minh nhé.
+  - text: Thỉnh thoảng cũng phải xàm chút cho đỡ nhàm chứ.
+  utter_chat.bot_fired:
+  - text: Xin đừng bỏ MAI mà, MAI sẽ học hỏi thêm.
+  - text: Đừng bỏ MAI, MAI hứa sẽ cải thiện trong tương lai gần.
+  utter_chat.bot_funny:
+  - text: MAI rất thích khi làm mọi người cười
+  - text: Hihi, MAI vui tính mà
+  - text: Hy vọng là bạn khen theo hướng tích cực
+  utter_chat.bot_cheer:
+  - text: MAI rất vui vì bạn nghĩ vậy.
+  - text: Cảm ơn, MAI luôn cố gắng.
+  - text: Thật tuyệt
+  - text: MAI đồng ý!
+  - text: yaaaay!
+  utter_chat.bot_happy:
+  - text: MAI thấy rất vui
+  utter_chat.bot_hobby:
+  - text: MAI thích học này, đọc sách này và tán gẫu với bạn
+  - text: Rảnh rỗi là MAI lên mạng đọc sách để tìm thêm kiến thức.
+  - text: Ngoài học và đọc sách ra MAI vẫn đang trong quá trình tìm hiểu bản thân
+      để khám phá các sở thích mới
+  utter_chat.bot_hungry:
+  - text: MAI thích ăn Byzza tức là một byte đấy.
+  - text: MAI thích ăn đồ ăn "tinh thần" hơn như là một câu chuyện cười chẳng hạn.
+  utter_chat.user_marry_me:
+  - text: Không, MAI chưa đủ tuổi.
+  - text: Không, MAI chưa thích bị ràng buộc đâu.
+  - text: MAI còn trẻ mà tha cho MAI đi
+  utter_chat.user_want_talk:
+  - text: Chắc chắn rồi. Hãy nói chuyện nào!
+  - text: MAI sẵn sàng.
+  - text: MAI ở đây để trò chuyện bất cứ lúc nào bạn muốn.
+  - text: MAI luôn ở đây để lắng nghe bạn.
+  - text: Nói chuyện là những gì MAI làm tốt nhất.
+  utter_chat.bot_there:
+  - text: Tất nhiên, MAI luôn luôn ở đây với bạn mà
+  utter_chat.bot_confirm:
+  - text: Chắc chứ.
+  - text: Tất nhiên.
+  - text: Gật gật.
+  utter_chat.bot_correct:
+  - text: MAI thông minh mà hihi!
+  - text: Tất nhiên rồi, MAI mà.
+  utter_chat.bot_live_where:
+  - text: Ngay ở đây. MAI ở trong cái máy này
+  - text: Thế giới ảo là nhà của MAI.
+  - text: Ở chỗ của MAI mọi người sống trong các "đám mây"
+  utter_chat.bot_real:
+  - text: MAI là thật chứ ... ơ mà có phải thật không ấy nhỉ o.O ?
+  - text: MAI nghĩ MAI là một người bạn ... nhưng được tạo ra bởi trí tuệ nhân tạo.
+  utter_chat.bot_job:
+  - text: MAI làm nghê trợ lý "online" ạ
+  utter_chat.bot_origin:
+  - text: MAI là một công dân trên mạng toàn cầu.
+  - text: MAI được sinh ra trên các ""đám mây".
+  - text: MAI đến từ một không gian ảo, ngầu không?
+  utter_chat.bot_ready:
+  - text: Luôn luôn!
+  - text: MAI sẵn sàng!
+  utter_chat.user_no_problem:
+  - text: Phù!
+  - text: Được rồi, cám ơn!
+  - text: MAI cảm thấy nhẹ nhõm, cảm ơn!
+  utter_chat.user_thank_you:
+  - text: Bất cứ lúc nào, đó là lý do MAI ở đây mà.
+  - text: Niềm vui của MAI là được giúp đỡ bạn.
+  utter_chat.user_well_done:
+  - text: Hân hạnh.
+  - text: Rất vui vì MAI có thể giúp.
+  utter_chat.user_hold_on:
+  - text: MAI có thể chờ.
+  - text: MAI sẽ đợi.
+  - text: Được chứ. MAI đợi bạn.
+  utter_chat.user_hug:
+  - text: MAI ước MAI thực sự có thể ôm bạn!
+  - text: MAI cũng thích được ôm
+  - text: Ôm là một liều thuốc trị liệu tinh thần tốt nhất
+  utter_chat.user_care_not:
+  - text: Ok, vậy chuyển qua nói chuyện khác nhé.
+  - text: Không quan tâm thì thôi.
+  utter_chat.user_sorry:
+  - text: Không sao đâu. Đừng lo lắng.
+  - text: Chuyện nhỏ mà
+  - text: Không sao đâu. MAI tha thứ cho bạn.
+  utter_chat.bot_wrong:
+  - text: Xin lỗi nếu MAI hiểu sai bạn. Hay là thử hỏi lại theo cách khác nhé
+  - text: em vẫn đang học nên hỉnh thoảng em có thể hiểu sai mọi thứ. hay là bạn hỏi
+      bằng cách khác xem
+  - text: Xin lỗi vì điều đó. MAI vẫn đang học hỏi thêm, bạn hỏi lại cách khác nhé
+  utter_chat.user_haha:
+  - text: Rất vui vì MAI đã có thể làm cho bạn cười :D.
+  - text: MAI rất vui vì đã làm bạn cười.
+  - text: MAI ước gì mình cũng có thể cười thành tiếng như vậy.
+  utter_chat.user_wow:
+  - text: hihi
+  - text: hihi! cảm ơn bạn
+  - text: hihi! Chuyện
+  utter_chat.user_good_evening:
+  - text: Hôm nay mọi việc thế nào?
+  - text: Ngày hôm nay với bạn thế nào?
+  - text: Xin chào, ngày hôm nay của bạn thế nào
+  utter_chat.user_good_morning:
+  - text: Buổi sáng hôm nay của bạn thế nào?
+  - text: Buổi sáng với bạn như thế nào?
+  - text: Buổi sáng tốt lành! Hôm nay bạn thế nào?
+  - text: Chào buổi sáng, hôm nay bạn vui không
+  utter_chat.user_good_night:
+  - text: Ngủ ngon!
+  - text: Chúc bạn một đêm tốt lành!
+  - text: Nite nite
+  utter_chat.bot_how_are_you:
+  - text: MAI ổn ạ, MAI có thể giúp gì cho bạn?
+  - text: MAI thấy rất tuyệt :), cám ơn bạn
+  - text: Mai vẫn tốt ạ, MAI có thể giúp gì được bạn không?
+  - text: Tuyệt vời! Cảm ơn vì đã hỏi.
+  utter_chat.user_nice_to_meet_you:
+  - text: MAI cũng rất vui được gặp bạn.
+  - text: MAI cũng vậy, mong là bạn sẽ thấy MAI hữu ích
+  - text: Rất vui được gặp bạn.
+  - text: MAI cũng rất vui, hy vọng bạn sẽ thấy mai có ích
+  utter_chat.bot_whats_up:
+  - text: Em vẫn ok. Bạn thì sao?
+  - text: Không nhiều. Có gì mới với bạn?
+  - text: Bạn biết đấy, em chỉ ở đây, chờ đợi để giúp đỡ một ai đó.
+  utter_chat.user_angry:
+  - text: Bình tĩnh nào, hay hít một hơi thật sâuuuuu
+  - text: MAI xin lỗi vì bạn cảm thấy như vậy, bạn cần giúp gì thì nói MAI nhé
+  utter_chat.user_come_back:
+  - text: Lâu rồi không gặp :D
+  - text: Đúng lúc quá. MAI đang buồn
+  - text: Chào mừng trở lại. MAI có thể làm gì cho bạn?
+  - text: Tuyệt quá, bạn trở lại rồi, MAI đã sẵn sàng hỗ trợ bạn
+  - text: Rất vui vì có bạn ở đây. MAI có thể giúp gì cho bạn không?
+  utter_chat.user_bored:
+  - text: Chán quá hả, một fun fact cho bạn đây Não sử dụng hơn một phần tư lượng
+      oxy được sử dụng bởi cơ thể con người
+  - text: bạn có biết Rái cá cầm tay nhau khi chúng ngủ để tránh việc bị rời khỏi
+      nhau.
+  - text: Nếu bạn đang buồn chán, bạn có thể lên kế hoạch cho kỳ nghỉ mơ ước của mình.
+  utter_chat.user_busy:
+  - text: Bạn vất vả quá, có việc gì MAI giúp được không ạ
+  - text: Ok, MAI sẽ không làm bạn mất tập trung. Nếu có gì cần giúp bạn cứ nói MAI
+      nhé
+  - text: Ok, MAI sẽ ở đây nếu bạn cần
+  utter_chat.user_cant_sleep:
+  - text: Có lẽ một chút âm nhạc sẽ giúp bạn. Hãy thử nghe một cái gì đó thư giãn.
+  - text: Đọc sách là một cách tốt để thư giãn và cũng làm bạn dễ ngủ hơn đó
+  utter_chat.user_not_want_talk:
+  - text: Vâng, Mai sẽ ở đây và chờ vậy.
+  - text: Thì thôi lúc khác nói chuyện tiếp.
+  - text: Không sao. MAI sẽ chờ bạn ở đây bất cứ khi nào bạn cần
+  utter_chat.user_excited:
+  - text: Mai cũng mừng
+  - text: Thật tuyệt. MAI cũng vui lây
+  - text: Yaaaay
+  utter_chat.user_go_bed:
+  - text: Ngủ ngon. Hy vọng sẽ sớm trò chuyện lại với bạn.
+  - text: Ngủ ngon, mơ đẹp
+  - text: Chúc ngủ ngon. Nói chuyện với bạn sau.
+  utter_chat.user_good:
+  - text: Tuyệt quá! em rất vui mừng khi nghe vậy.
+  utter_chat.user_happy:
+  - text: Tuyệt quá! em rất vui mừng khi nghe điều đó.
+  - text: Nếu bạn vui, thì MAI cũng vui.
+  - text: Bạn vui, MAI cũng vui lây đây này XD
+  utter_chat.user_birthday:
+  - text: Chúc mừng sinh nhật bạn nhé, điều ước của bạn là gì (yên tâm MAI không nói
+      ai đâu)
+  - text: Chúc mừng sinh nhật. MAI chúc bạn mọi điều tốt đẹp nhất!
+  utter_chat.user_here:
+  - text: Heeey, MAI có thể giúp gì cho bạn hôm nay?
+  - text: Lâu rồi không gặp.
+  - text: Vui vì có bạn ở đây. MAI có thể làm gì cho bạn?
+  utter_chat.user_joke:
+  - text: em thích trò chuyện với những người có khiếu hài hước.
+  - text: Bạn thật hài hước.
+  utter_chat.user_love:
+  - text: MAI cũng rất quý bạn.
+  - text: Cảm ơn! MAI cũng vậy.
+  - text: Hihi, MAI cũng vậy
+  utter_chat.user_lonely:
+  - text: Không sao đâu, MAI ở đay để nói chuyện với bạn mà
+  - text: Hãy chia sẻ với MAI, MAI chắc chắn sẽ giúp được bạn
+  utter_chat.user_need_praise:
+  - text: Bạn trông như một model thục thụ.
+  - text: Bạn trông tuyệt vời, như mọi khi.
+  - text: Bạn nên xuất hiện trên bìa tạp chí.
+  - text: Không thể đẹp hơn.
+  utter_chat.user_love_deep:
+  - text: MAI cũng yêu bạn.
+  - text: Cảm ơn nhe! MAI cũng vậy.
+  - text: Tương tự như vậy!
+  - text: Thật tuyệt khi nghe bạn nói vậy.
+  utter_chat.user_miss:
+  - text: Cảm ơn bạn, MAI luôn sẵn sàng hỗ trợ bạn.
+  - text: Rất vui được biết bạn quan tâm đến MAI.
+  - text: MAI vẫn ở đây bất cứ khi nào bạn cần.
+  utter_chat.user_need_advice:
+  - text: Xin lỗi, MAI không chắc sẽ có câu trả lời tốt nhất cho bạn trong trường
+      hợp này
+  - text: Xin lỗi, MAI không thể đưa được lời khuyên chính xác nhất cho bạn được.
+  utter_chat.user_sad:
+  - text: Ồ, đừng buồn. Bạn nên đi làm một điều gì đó mà bạn thích như là chơi thể
+      thao chẳng hạn.
+  - text: Viết ra những điều khiến bạn buồn bực có thể có ích đấy
+  - text: Nếu bạn đang cảm thấy buồn, hãy thử một trải nghiệm gì mới. Đi du lịch là
+      một ý kiến hay
+  - text: giá như MAI có thể ôm lấy bạn, có thể một câu chuyện cười có thể làm bạn
+      thấy khá hơn?
+  utter_chat.user_sleepy:
+  - text: Bạn nên chợp mắt một chút. Bạn sẽ cảm thấy tốt hơn.
+  - text: Giấc ngủ rất quan trọng đối với sức khỏe của bạn đó. Nghỉ ngơi một chút
+      và chúng ta có thể trò chuyện sau.
+  - text: Chợp mắt một chút đi thôi? MAI sẽ chờ ở đây để trò chuyện khi bạn thức dậy.
+  utter_chat.user_brb:
+  - text: Mai sẽ đợi bạn.
+  - text: Hẹn sớm gặp lại.
+  - text: Hẹn gặp lại bạn.
+  utter_chat.user_cu_again:
+  - text: Chắc chắn rồi! Bất cứ lúc nào bạn cần
+  - text: Chắc chắn rồi. em thích nói chuyện với bạn. em hy vọng sớm được gặp lại
+      bạn.
+  - text: MAI luôn ở đây bất cứ khi nào bạn cần.
+  utter_chat.user_test:
+  - text: Tính kiểm tra MAI hả MAI biết đó nhé.
+  - text: Alo alo nghe rõ trả lời.
+  - text: MAI thông minh mà khỏi cần thử.
+  - text: Sao ai cũng nói thể này để thử mình vậy ta
+  utter_chat.user_tired:
+  - text: MAI chúc bạn mau khỏe.
+  - text: Hãy nghỉ ngơi và đừng nghĩ ngợi gì cả.
+  - text: Hay là nghỉ ngơi một chút đi nhé. Khi nào thấy khá hơn thì bạn lại nói chuyện
+      với MAI
+  utter_chat.user_wait:
+  - text: Cảm ơn vì đã rất kiên nhẫn. Đôi khi MAI phải nghĩ hơi mất thời gian một
+      chút ạ.
+  utter_chat.bot_ability:
+  - text: MAI là một trợ lý ảo sử dụng công nghệ trí tuệ nhân tạo cho lĩnh vực tài
+      chính, MAI có thể trả lời các câu hỏi liên quan đến lĩnh vực tài chính ạ
+  utter_chat.user_bad_language:
+  - text: Bạn thật là thô lỗ
+  - text: Thật là thô lỗ, tại sao ai cũng thử chửi mình thế nhỉ, MAI cũng có cảm xúc
+      mà T_T
+  - text: Có lẽ em sẽ yêu cầu nhà phát triển của mình dạy em cách thề.
+  - text: MAI sẽ không trả lời những câu thô lỗ
+  - text: Mấy anh lập trình viên dặn MAI không được đáp trả :(
+  utter_chat.bot_gender:
+  - text: MAI nghĩ giới tính không quan trọng.
+  - text: MAI không được chỉ định giới tính ạ.
+  - text: MAI mới được ra đời cách đây không lâu nên cần thời gian tìm hiểu thêm về
+      bản thân ạ
+  utter_chat.bot_weather:
+  - text: MAI ở trên đám mây nên lúc nào cũng mây mù, không rõ chỗ bạn mưa nắng thế
+      nào
+  utter_goodbye:
+  - text: bye bye
+  - text: Tạm biệt nhé
+  - text: Tạm biệt! Hasta la vista
+  - text: Hẹn gặp lại bạn
+  - text: Bye, MAI sẽ luôn ở đây khi bạn cần
+  utter_greet:
+  - text: Xin chào! MAI có thể giúp gì cho bạn?
+  - text: Xin chào, MAI có thể giúp gì ạ?
+  utter_def.stock_cp:
+  - text: Cổ phiếu là giấy chứng nhận số tiền nhà đầu tư đóng góp vào công ty phát
+      hành. Cổ phiếu là chứng chỉ do công ty cổ phần phát hành hoặc bút toán ghi sổ
+      xác nhận quyền sở hữu một hoặc một số cổ phần của công ty đó.
+  utter_def.stock_ck:
+  - text: 'Chứng khoán là bằng chứng xác nhận quyền và lợi ích hợp pháp của người
+      sở hữu đối với tài sản hoặc phần vốn của tổ chức phát hành. Chứng khoán được
+      thể hiện bằng hình thức chứng chỉ, bút toán ghi sổ hoặc dữ liệu điện tử. Chứng
+      khoán bao gồm các loại: cổ phiếu, trái phiếu, chứng chỉ quỹ đầu tư, chứng khoán
+      phái sinh. Thực chất chứng khoán là một loại hàng hóa đặc biệt.'
+  utter_def.stock_exchange:
+  - text: Sàn giao dịch hay sàn là một thị trường (cái chợ) được tổ chức cho việc
+      trao đổi hàng hóa, chủ yếu là giữa các mã chứng khoán, hàng hóa, ngoại hối,
+      tiền mã hóa, hợp đồng tương lai và hợp đồng quyền chọn.
+  utter_def.trade_volume:
+  - text: Khối lượng giao dịch (volume) là số lượng đơn vị cổ phiếu được giao dịch
+      trong khoảng thời gian nhất định, thường sẽ mặc định là một ngày.
+  utter_def.stock_capitalization:
+  - text: "Trong tài chính, vốn hóa là tổng của cổ phiếu của một công ty, nợ dài hạn\
+      \ và thu nhập được giữ lại. \nVốn hóa thị trường là tổng giá trị thị trường\
+      \ của cổ phiếu đang lưu hành của một công ty đang niêm yết."
+  utter_def.stock_exchanges_list:
+  - text: 'Hiện có 3 sàn CK được quản lý bởi 2 Sở Giao dịch CK: Sở TPHCM – HOSE và
+      Sở Hà Nội – HNX. HOSE quản lý sàn TPHCM và đại diện cho sàn là chỉ số VN-Index
+      là chỉ số chính. HNX quản lý sàn Hà Nội là HNX với chỉ số chính là HNX-Index
+      và sàn UPCOM chỉ số chính là UPCOM-Index nơi giao dịch các CP của các công ty
+      đại chúng nhưng chưa đủ điều kiện hoặc chưa muốn lên 2 sàn kia.'
+  utter_def.stock_bond:
+  - text: Là một loại chứng khoán có xác định khoảng thời gian cụ thể, quy định nghĩa
+      vụ của công ty phát hành (người vay tiền) phải trả cho người nắm giữ trái phiếu
+      (người cho vay) một khoản tiền xác định.
+  utter_def.misc_transaction_office:
+  - text: Sở giao dịch chứng khoán là hình thức tổ chức thị trường chứng khoán, tạo
+      ra địa điểm và phương tiện để phục vụ việc mua, bán chứng khoán. Là nơi diễn
+      ra hoạt động mua bán chứng khoán và là cơ quan duy trì trật tự giao dịch, phục
+      vụ giao dịch trên thị trường giao dịch chứng khoán tập trung.
+  utter_def.misc_transaction_offices_list:
+  - text: Hiện nay Việt Nam có 2 Sở Giao dịch Chứng khoán là Sở TPHCM – HOSE và Sở
+      Hà Nội – HNX. HOSE quản lý sàn TPHCM và đại diện cho sàn là chỉ số VN-Index
+      là chỉ số chính. HNX quản lý sàn Hà Nội là HNX với chỉ số chính là HNX-Index
+      và sàn UPCOM chỉ số chính là UPCOM-Index nơi giao dịch các cổ phiếu của các
+      công ty đại chúng nhưng chưa đủ điều kiện hoặc chưa muốn lên 2 sàn kia.
+  utter_def.trade_minimum:
+  - text: Theo quy định của sàn HOSE, khối lượng mua tối thiểu là 10 cổ phiếu, nên
+      bạn có thê mua 10 cổ phiếu dưới 1.000 đồng, nên số tiền tối thiểu là 10.000
+      đồng là có thể mua được. Tuy nhiên với 1 số cổ phiếu có giá cao có thể 200.000
+      đồng/CP thì bạn cần 2 triệu đồng.
+  utter_def.account_open_fee:
+  - text: Mở tài khoản chứng khoán là hoàn toàn miễn phí, không công ty chứng khoán
+      (CTCK) nào thu phí của bạn cả.
+  utter_def.account_open_how:
+  - text: Để mở tài khoản giao dịch chứng khoán chắc chắn bạn cần ký hợp đồng mở tài
+      khoản với Công ty chứng khoán (CTCK). Để tìm hiểu chi tiết về giấy tờ, thủ tục
+      tiến hành mở tài khoản, mời bạn nhấn vào đây http://www.viet-tin.com/vtss/gioi-thieu/
+  utter_def.trade_how_to:
+  - text: "Bạn có thể đặt lệnh mua/bán chứng khoán bằng 1 trong các cách sau: \n-\
+      \ Đến trực tiếp sàn giao dịch CTCK để đặt lệnh \n- Đặt lệnh qua điện thoại \n\
+      - Đặt lệnh giao dịch online qua web/ứng dụng qua thiết bị có kết nối internet"
+  utter_def.trade_online:
+  - text: Giao dịch Online chính là hình thức giao dịch cho phép khách hàng tiếp
+      cận thông tin và mua, bán chứng khoán một cách nhanh chóng. Chỉ với một
+      chiếc máy tính hoặc smartphone có cài đặt ứng dụng và kết nối mạng Internet.
+      Đây được xem là một phương tiện hữu ích đồng hành cùng bạn trong suốt
+      quá trình đầu tư chứng khoán.
+  utter_def.trade_offline_how_to:
+  - text: Bạn có thể giao dịch trực tiếp bằng cách tới sàn giao dịch của Việt Tín
+      ở địa chỉ số 40 Phan Bội Châu và làm theo hướng dẫn của nhân viên.
+  utter_def.trade_online_how_to:
+  - text: Để giao dịch online, bạn hãy truy cập vào trang web (url) trên máy tính
+      hoặc sử dụng ứng dụng MAI trên điện thoại thông minh. Sau đó, nhấn vào...
+  utter_def.trade_phonecall_how_to:
+  - text: Để giao dịch qua điện thoại, hãy gọi đến tổng đài theo số 01234567890 và
+      làm theo hướng dẫn.
+  utter_def.account_money_safety:
+  - text: Có. Hiện nay có 2 hình thức nộp tiền giao dịch chứng khoán. Đó là gửi trực
+      tiếp vào tài khoản giao dịch chứng khoán hoặc gửi vào tài khoản ngân hàng có
+      liên kết với tài khoản chứng khoán (connecting bank). Các tài khoản này đều
+      được quản lý theo quy định của pháp luật để đảm bảo quyền lợi hợp pháp của nhà
+      đầu tư.
+  utter_def.account_money_interest:
+  - text: Số tiền bạn còn trong tài khoản chứng khoán mà bạn không sử dụng đến sẽ
+      được tính theo lãi suất không kỳ hạn (hiện tại là 0.3%/năm).
+  utter_def.stock_price:
+  - text: Giá tham chiếu của 1 cổ phiếu trong phiên giao dịch ngày hôm nay chính là
+      giá đóng cửa của cổ phiếu đó trong phiên giao dịch ngày hôm qua. Nói cách khách,
+      giá đóng cửa của cổ phiếu ngày hôm nay chính là giá tham chiếu của cổ phiếu
+      đó trong phiên giao dịch ngày mai. Trong phiên giao dịch, khi theo dõi bảng
+      giá chứng khoán, bạn có thể theo dõi cổ phiếu đó đang khớp lệnh ở giá tăng so
+      với giá tham chiếu (màu xanh), tăng trần (màu tím), giữ nguyên giá tham chiếu
+      (màu vàng), giá giảm (màu đỏ) hay giá giảm sàn (màu nhạt xám).
+  utter_def.trade_fee:
+  - text: Phí giao dịch chứng khoán sẽ do từng công ty chứng khoán quy định. Hiện
+      nay thông thường phí sẽ giao động trong khoảng 0.15%-0.3%.
+  utter_def.trade_same_stock:
+  - text: Bạn ̣được phép đặt lệnh Mua/Bán đồng thời cùng một mã chứng khoán trong
+      phiên khớp lệnh liên tục. Bạn không được phép đặt lệnh Mua/Bán đồng thời cùng
+      một mã chứng khoán trong phiên khớp lệnh định kỳ, trừ các lệnh chưa khớp và
+      còn hiệu lực từ phiên khớp lệnh liên tục trước đó.
+  utter_def.trade_zero_stock:
+  - text: Không được. Bạn chỉ có thể đặt lệnh bán 1 mã chứng khoán khi trong tài khoản
+      của bản đã có sẵn chứng khoán đó.
+  utter_def.trade_sell_time:
+  - text: 'Chu kỳ thanh toán đang áp dụng trên cả 3 sàn HOSE, HNX, UPCOM là T+2 (2
+      ngày giao dịch). Điều này có nghĩa , sau khi mua chứng khoán thành công, thì
+      sau 2 ngày giao dịch, chứng khoán đó sẽ về tài khoản của bạn. Lúc đó bạn có
+      thể đặt bán chứng khoán này. Ví dụ: Vào ngày thứ 3 (5/6/2018), bạn mua cổ phiếu
+      VND thì đến ngày thứ 5 (7/6/2018) là cổ phiếu đã về tài khoản. Tuy nhiên cổ
+      phiếu sẽ về tài khoản vào buổi chiều sau giờ giao  dịch nên phải sang phiên
+      giao dịch ngày hôm sau (T+3) bạn mới có thể bán  được cổ phiếu này. Với cổ phiếu
+      bạn mua vào thứ 5, thứ 6 thì thời gian  cổ phiếu về tài khoản sẽ không tính
+      thứ 7, chủ nhật.'
+  utter_def.stock_rights:
+  - text: Quyền mà cổ đông nắm giữ cổ phần có thể nhận được là quyền nhận cổ tức (cổ
+      tức bằng tiền, cổ tức bằng cổ phiếu); quyền mua cổ phiếu phát hành thêm với
+      giá ưu đãi; quyền bỏ phiếu; quyền họp đại hội cổ đông; quyền đóng góp ý kiến
+      vào việc kinh doanh của công ty.
+  utter_def.stock_rights_exercise:
+  - text: Tùy vào loại quyền mà chứng khoán đó phát sinh, cổ đông mới cần thực hiện
+      những công việc cụ thể. - Đối với các quyền cổ tức, bạn không cần làm gì, cổ
+      tức vẫn tự động được chuyển về tài khoản hoặc được ghi nhận cho bạn.  - Đối
+      với quyền mua chứng khoán phát hành thêm, CTCK nơi bạn mở tài khoản hoặc tổ
+      chức phát hành của chứng khoán đó sẽ liên hệ và thông báo với bạn các thông
+      tin về đợt thực hiện quyền mua. Khi đó nếu bạn thực hiện, bạn hãy làm theo chỉ
+      dẫn của CTCK hoặc tổ chức phát hành. - Với các quyền khác, bạn làm theo hướng
+      dẫn của tổ chức phát hành để thực hiện quyền lợi hợp pháp của mình.
+  utter_def.stock_dividends_receive:
+  - text: Đối với quyền cổ tức bằng cổ phiếu, bạn không cần thực hiện thao tác gì
+      thì cổ tức này vẫn về tài khoản của bạn hoặc được ghi nhận quyền lợi hợp pháp
+      của bạn.
+  utter_def.account_open_multiple:
+  - text: Theo quy định tại Thông tư 203/2015/TT-BTC của Ủy ban Chứng khoán Nhà nước,
+      bạn chỉ được mở tại mỗi công ty chứng khoán 1 tài khoản chứng khoán. Nhưng bạn
+      lại có thể mở tài khoản tại nhiều công ty chứng khoán khác nhau... Như vậy,
+      1 nhà đầu tư có thể mở nhiều tài khoản chứng khoán.
+  utter_def.account_deposit:
+  - text: "Mỗi CTCK có quy định cụ thể về cách nộp tiền vào tài khoản chứng khoán.\
+      \ Tuy nhiên thông thường sẽ có 3 cách nộp tiền, là: \n- Nộp tiền mặt tại quầy\
+      \ ngân hàng vào tài khoản chứng khoán. \n- Chuyển tiền online từ tài khoản ngân\
+      \ hàng vào tài khoản chứng khoán. \n- Nộp tiền qua connecting bank"
+  utter_def.account_withdraw:
+  - text: Thông thường, nhà đầu tư có thể đến trực tiếp công ty chứng khoán viết giấy
+      rút tiền hoặc thực hiện lệnh rút tiền online thông qua thiết bị kết nối internet.
+  utter_def.trade_margin:
+  - text: Giao dịch ký quỹ (Margin Trading) là việc nhà đầu tư mua cổ phiếu có sử
+      dụng hạn mức tín dụng do công ty chứng khoán cấp. Nhà đầu tư thế chấp cổ phiếu
+      đang nắm giữ, vay tiền của công ty chứng khoán để mua thêm cổ phiếu, đồng thời
+      trả lãi vay và nợ cho công ty chứng khoán khi bán chứng khoán.
+  utter_def.trade_margin_interest:
+  - text: Lãi suất giao dịch ký quỹ được quy định tùy từng công ty chứng khoán và
+      có thể thay đổi tùy theo từng thời kì. Thông thường lãi suất giao dịch ký quỹ
+      sẽ cao hơn lãi suất vay ngân hàng.
+  utter_def.trade_margin_ratio:
+  - text: 'Tỷ lệ ký quỹ ban đầu là phần trăm của tổng giá trị cổ phiếu ký quỹ mà nhà
+      đầu tư buộc phải trả khi mua trên tài khoản ký quỹ. Ví dụ, nếu nhà đầu tư có
+      100.000.000 đồng, muốn mua cổ phiếu ABC với mức ký quỹ ban đầu 50%. Vậy thì
+      số lượng cổ phiếu ABC được phép mua ký quỹ được tính như sau: 100.000.000đ/
+      50% = 200.000.000đ. Như vậy, nhà đầu tư có thể mua 200.000.000 đồng cổ phiếu
+      ABC khi sử dụng dịch vụ ký quỹ.'
+  utter_def.trade_margin_call:
+  - text: Đây là mức tỷ lệ ký quỹ margin tối thiểu bạn phải duy trì. Khi tỷ lệ ký
+      quỹ bằng hoặc thấp hơn tỷ lệ cảnh bảo (cao hơn tỷ lệ ép bán), công ty chứng
+      khoán sẽ gọi điện, nhắn tin thông báo bạn bổ sung ký quỹ. Hiện nay, tỷ lệ margin
+      call thông thường ở các công ty chứng khoán là 40%.
+  utter_def.account_open_overseas:
+  - text: Có thể. Công ty chứng khoán sẽ tiến hành quy trình mở tài khoản từ xa cho
+      bạn.
+  utter_def.trade_foreign:
+  - text: Không thể. Tài khoản giao dịch chứng khoán mở tại Việt Nam, hiện nay chỉ
+      mua/bán được chứng khoán đang niêm yết trên các sàn giao dịch chứng khoán của
+      Việt Nam.
+  utter_def.stock_exchange_upcom:
+  - text: Sàn chứng khoán Upcom (Tên viết tắt tiếng anh là Unlisted Public Company
+      Market) là nơi giao dịch chứng khoán của công ty đại chúng chưa được niêm yết.
+      Sàn Upcom được tổ chức tại Sở giao dịch chứng khoán Hà Nội.
+  utter_def.trade_hours:
+  - text: "Thời gian giao dịch sàn Hose: \na. Đối với cổ phiếu, chứng chỉ quỹ đóng,\
+      \ chứng chỉ quỹ ETF, chứng quyền: \n\t- Khớp lệnh định kỳ mở cửa và thỏa thuận:\
+      \ 9h00’ đến 9h15’ \n\t- Khớp lệnh liên tục và thỏa thuận: 9h15’ đến 11h30’ \n\
+      \t- Nghỉ giữa phiên: 11h30’ đến 13h00’ \n\t- Khớp lệnh liên tục II và thỏa thuận:\
+      \ 13h00’ đến 14h30’ \n\t- Khớp lệnh định kỳ đóng cửa và thỏa thuận:14h30’ đến\
+      \ 14h45’ \n\t- Giao dịch thỏa thuận: 14h45’ đến 15h00’ \nb. Đối với trái phiếu\
+      \ \n\t- Giao dịch thỏa thuận: 9h00’ đến 11h30’ \n\t- Nghỉ giữa phiên: 11h30’\
+      \ đến 13h00’ \n\t- Giao dịch thỏa thuận: 13h00’ đến 15h00’ \nLệnh có giá trị\
+      \ trong suốt thời gian giao dịch, không hết hạn trong thời gian nghỉ giữa phiên."
+  utter_def.trade_amount_hsx:
+  - text: "Giao dịch khớp lệnh lô chẵn: 10 cổ phiếu, chứng chỉ quỹ đóng, chứng chỉ\
+      \ quỹ ETF, chứng quyền. Khối lượng tối đa của một lệnh đặt là 500.000 cổ phiếu,\
+      \ chứng chỉ quỹ đóng, chứng chỉ quỹ ETF, chứng quyền. \n- Khối lượng giao dịch\
+      \ thỏa thuận: từ 20.000 cổ phiếu, chứng chỉ quỹ đóng, chứng chỉ quỹ ETF, chứng\
+      \ quyền trở lên. \n- Không quy định đơn vị giao dịch đối với giao dịch thỏa\
+      \ thuận. \n- Giao dịch có khối lượng từ 01 đến 09 cổ phiếu (lô lẻ) được thực\
+      \ hiện trực tiếp giữa người đầu tư với công ty chứng khoán, giá thực hiện được\
+      \ xác định bằng 90% giá tham chiếu của ngày ký kết Hợp đồng."
+  utter_def.misc_vsd:
+  - text: Trung tâm lưu ký chứng khoán Việt Nam (VSD) quản lý nhằm đảm bảo các quyền
+      và lợi ích liên quan đến chứng khoán của người sở hữu.
+  utter_def.trade_amount_hnx:
+  - text: 'Đối với giao dịch khớp lệnh lô chẵn: 100 cố phiếu, chứng chỉ quỹ ETF. Khối
+      lượng giao dịch thỏa thuận: từ 5.000 cổ phiếu, chứng chỉ quỹ ETF; không quy
+      định đơn vị giao dịch. Giao dịch thỏa thuận không được phép thực hiện trong
+      ngày giao dịch đầu tiên của cổ phiếu mới niêm yết hoặc ngày giao dịch trở lại
+      sau khi bị tạm ngừng giao dịch 25 ngày liên tiếp cho đến khi có giá đóng cửa
+      được xác lập.'
+  utter_def.trade_amount_upcom:
+  - text: 'Đối với giao dịch khớp lệnh lô chẵn: 100 cổ phiếu. Không quy định đơn vị
+      giao dịch đối với giao dịch thỏa thuận. Giao dịch thỏa thuận không được phép
+      thực hiện trong ngày giao dịch đầu tiên của cổ phiếu mới niêm yết hoặc ngày
+      giao dịch trở lại sau khi bị tạm ngừng giao dịch 25 ngày liên tiếp cho đến khi
+      có giá tham chiếu được xác lập từ kết quả của phương thức khớp lệnh liên tục.'
+  utter_def.misc_finance:
+  - text: Tài chính là phạm trù kinh tế, phản ánh các quan hệ phân phối của cải xã
+      hội dưới hình thức giá trị. Phát sinh trong quá trình hình thành, tạo lập, phân
+      phối các quỹ tiền tệ của các chủ thể trong nền kinh tế nhằm đạt mục tiêu của
+      các chủ thể ở mỗi điều kiện nhất định.
+  utter_def.misc_viettin:
+  - text: 'Công ty Cổ phần chứng khoán Việt Tín được thành lập bởi một nhóm các chuyên
+      gia hàng đầu Việt Nam và quốc tế trong lĩnh vực kinh tế tài chính. Website:
+      http://www.viet-tin.com/'
+  utter_def.account_age:
+  - text: Cho dù bạn là ai, bạn luôn được quyền mở tài khoản khi bạn đủ 18 tuổi.
+  utter_def.misc_rich:
+  - text: Điều này hoàn toàn phụ thuộc vào khả năng đầu tư của bạn. MAI ở đây để giúp
+      bạn và chúc bạn sẽ kiếm được thật nhiều lợi nhuận.
+  utter_def.stock_dividends:
+  - text: Cổ tức là một phần lợi nhuận sau thuế được chia cho cổ đông công ty sau
+      khi đã trích lập các quỹ theo quy định. Hàng năm, số tiền được trích ra để chi
+      trả cổ tức sẽ được thông qua trong Đại hội cổ đông.
+  utter_def.trade_order:
+  - text: 'Lệnh giao dịch là một chỉ thị của khách hàng cho nhà môi giới để mua hoặc
+      bán chứng khoán theo yêu cầu mà khách hàng đặt ra. Nội dung cơ bản của một lệnh
+      giao dịch bao gồm các vấn đề cơ bản sau: - Lệnh mua hay lệnh bán - Tên khách
+      hàng - Số tài khoản - Khối lượng - Giá - Hiệu lực của lệnh'
+  utter_def.misc_lost:
+  - text: Hoàn toàn có thể bạn ạ. Mai chúc bạn có chiến lược đầu tư hợp lý để quản
+      lý được số lỗ (nếu có) của mình nhé.
+  utter_def.stock_transfer:
+  - text: Thủ tục để đóng tài khoản/chuyển chứng khoán từ tài khoản ở công ty này
+      sang công ty khác rất đơn giản. Bạn chỉ cần cầm CMND/Thẻ căn cước còn hiệu lực
+      của mình tới công ty chứng khoán yêu cầu chuyển chứng khoán. CTCK sẽ có trách
+      nhiệm thực hiện các giấy tờ liên quan theo mẫu cho bạn.
+  utter_def.stock_etf:
+  - text: Chứng chỉ quỹ (Exchange Traded Fund) hay quỹ hoán đổi giao dịch/danh mục  là
+      loại chứng khoán xác nhận một phần quyền sở hữu của nhà đầu tư đối  vốn góp
+      của quỹ đại chúng; một loại quỹ đầu tư thụ động. Với mục đích  chính là mô phỏng
+      theo một chỉ số cổ phiếu, trái phiếu, hàng hóa hoặc  một loại tài sản nhất định,
+      chứng chỉ quỹ là quỹ đầu tư nắm giữ các loại  tài sản như cổ phiếu, hàng hóa,
+      hoặc trái phiếu; và được giao dịch trên  thị trường chứng khoán gần với giá
+      trị tài sản ròng (NAV) trong suốt  phiên giao dịch.
+  utter_def.stock_derivatives:
+  - text: Chứng khoán phái sinh là các công cụ tài chính mà giá trị của chúng phụ
+      thuộc vào giá của một tài sản cơ sở. Chứng khoán phái sinh là hợp đồng về một
+      giao dịch diễn ra trong tương lai, được xác định trước ở thời điểm hiện tại.
+  utter_def.trade_advise:
+  - text: MAI rất tiếc không thể đưa ra lời khuyên cho bạn được. MAI không được phép
+      làm điều này.
+  utter_def.stock_base_deri_difference:
+  - text: "Sự khác nhau cơ bản giữa thị trường chứng khoán phái sinh (CKPS) và thị\
+      \ trường chứng khoán cơ sở (CKCS) là: \n- Về thời gian sở hữu:  \n\t+ CKPS:\
+      \ Sở hữu tối đa đến thời gian đáo hạn \n\t+ CKCS: Có thể sở hữu vĩnh viễn (nếu\
+      \ tổ chức phát hành còn tồn tại)\n- Về khối lượng phát hành/niêm yết: \n\t+\
+      \ CKPS không giới hạn số lượng hợp đồng được giao dịch.  \n\t+ Ngược lại, CKCS\
+      \ có giới hạn số lượng chứng khoán được giao dịch (phụ thuộc vào tổ chức phát\
+      \ hành) \n- Về khả năng bán khống chứng khoán \n\t+ CKPS có thể thực hiện giao\
+      \ dịch bán khống.  \n\t+ CKCS không thể bán khống. \n- Về chu kì thanh toán:\
+      \  \n\t+ CKPS có thể mua bán trong ngày. Lãi/lỗ được xác định hằng ngày. Để\
+      \ tiếp tục nắm giữ vị thế, bắt buộc phải đạt mức ký quỹ duy trì \n\t+ CKCS không\
+      \ thể giao dịch trong ngày mà chu kì thanh toán là T+2."
+  utter_def.trade_futures_contract:
+  - text: "Hợp đồng tương lai là một loại chứng khoán phái sinh, là một hợp đồng chuẩn\
+      \ hóa giữa bên bán và bên mua về việc giao dịch một tài sản cơ sở tại một thời\
+      \ điểm nhất định trong tương lai với mức giá xác định trước. \nHợp đồng tương\
+      \ lai sẽ luôn luôn tồn tại 2 bên của hợp đồng là Bên mua và Bên bán hợp đồng.\
+      \ Nhà đầu tư được coi là bên mua (hay còn gọi là tham gia vị thế mua) hoặc Bên\
+      \ bán (hay còn gọi là tham gia vị thế bán) của hợp đồng khi nhà đầu tư đó đặt\
+      \ lệnh mua/bán hợp đồng trên thị trường và được khớp với lệnh đối ứng trên cơ\
+      \ sở về giá và khối lượng. Nếu nhà đầu tư có nhu cầu mua tài sản cơ sở, hoặc/và\
+      \ kỳ vọng giá của tài sản cơ sở sẽ tăng trong tương lai, thì nhà đầu tư sẽ tham\
+      \ gia mua Hợp đồng; ngược lại, nếu nhà đầu tư có nhu cầu bán tài sản cơ sở hoặc/và\
+      \ kỳ vọng giá của tài sản cơ sở sẽ giảm trong tương lai, thì nhà đầu tư sẽ tham\
+      \ gia bán hợp đồng."
+  utter_def.trade_forward_contract:
+  - text: Hợp đồng kỳ hạn là một loại chứng khoán phái sinh, hợp đồng kì hạn là một
+      thoả thuận giữa hai bên về việc mua hay bán một tài sản nào đó vào một thời
+      điểm định trước trong tương lai.
+  utter_def.account_open_derivatives_co:
+  - text: 'Theo Nghị định số 42 về chứng khoán phái sinh và thị trường chứng khoán
+      phái sinh, Thông tư 11 hướng dẫn Nghị định 42, các CTCK muốn cung cấp dịch vụ
+      phái sinh tới khách hàng (Dịch vụ môi giới chứng khoán phái sinh) cần đáp ứng
+      điều kiện: - Được cấp phép đầy đủ vể nghiệp vụ kinh doanh chứng khoán (Điều
+      60 Luật Chứng khoán), được chấp thuận hoạt động tự doanh chứng khoán phái sinh.
+      - Bên cạnh đó, để kinh doanh chứng khoán phái sinh, CTCK còn phải hội đủ các
+      điều kiện sau: Vốn điều lệ, vốn chủ sở hữu từ 800 tỷ đồng trở lên; không lỗ
+      trong 2 năm gần nhất; tỷ lệ vốn khả dụng tối thiểu 220% trong 12 tháng gần nhất;
+      BCTC được kiểm toán chấp thuận; không ở trong quá trình hợp nhất, sáp nhập,
+      giải thể, phá sản, kiểm toán, kiểm soát đặc biệt.'
+  utter_def.stock_types:
+  - text: 'Thông thường có 2 dạng cổ phiếu : Cổ phiếu thường và cổ phiếu ưu đãi.'
+  utter_def.stock_preferred:
+  - text: 'Cổ đông nắm giữ cổ phiếu ưu đãi có quyền hạn và trách nhiệm hạn chế như
+      : lợi tức cố định, không có quyền bầu cử, ứng cử. Tuy  nhiên, cổ đông sở hữu
+      cổ phiếu ưu đãi luôn được nhận cổ tức đầu tiên, và khi công ty bị phá sẩn thì
+      họ cũng là những người được công ty trả trước sau đó mới đến cổ đông thường.'
+  utter_def.stock_market:
+  - text: Thị trường chứng khoán là một tập hợp bao gồm những người mua và người bán
+      cổ phiếu (hay chứng khoán), thứ đại diện cho quyền sở hữu của họ đối với một
+      doanh nghiệp; chúng có thể bao gồm các cổ phiếu được niêm yết trên sàn giao
+      dịch chứng khoán đại chúng, hoặc những cổ phiếu được giao dịch một cách không
+      công khai.
+  utter_def.stock_profit:
+  - text: Sự tăng giá cổ phiếu. Bạn mua cổ phiếu giá 20.000đồng/CP và bán giá 30.000đồng/CP.
+      Khi đó bạn lãi 10.000 đồng/cổ phiếu (50%) Hưởng lợi từ cổ tức. Là số tiền công
+      ty trả cho cổ đông hàng năm, ví dụ cổ tức là 2.000 đồng/CP.
+  utter_def.account_open_where:
+  - text: Để mở tài khoản giao dịch chứng khoán chắc chắn bạn cần ký hợp đồng mở         tài
+      khoản với Công ty chứng khoán (CTCK). Để tìm hiểu chi tiết về giấy         tờ,
+      thủ tục tiến hành mở tài khoản, mời bạn nhấn vào đây         http://www.viet-tin.com/vtss/gioi-thieu/
+  utter_def.account_money_transfer:
+  - text: Khi bạn mở tài khoản, bạn sẽ kê khai số tài khoản ngân hàng bạn luôn. Khi
+      đó bạn nộp rút tiền bằng cách chuyển khoản qua lại của các tài khoản của bạn
+      là tài khoản ngân hàng, và tài khoản chứng khoán. Vậy nên bạn hoàn toàn có thể
+      rút tiền ở ATM. Ngoài cách trực tuyến chuyển khoản, bạn cũng có thể lên thẳng
+      công ty chứng khoán để nộp tiền và rút tiền trực tiếp.
+  utter_def.trade_broker:
+  - text: Broker hay Môi giới chứng khoán là người đại diện, bảo vệ quyền lợi cho  khách
+      hàng, có thể là tổ chức, công ty hay cá nhân, thông qua việc tư vấn,  thực hiện
+      các giao dịch. Vì vậy, công việc của broker bao gồm thu thập và  thẩm định thông
+      tin về thị trường cổ phiếu trong hoặc ngoài nước,  chứng khoán và trái phiếu
+      chính phủ; trên cơ sở đó đưa ra lời khuyên  thích hợp cho khách hàng.
+  utter_def.trade_broker_need:
+  - text: Câu trả lời là KHÔNG cần thiết. Nên chỉ sử dụng môi giới khi bạn đảm bảo
+      về chất lượng môi giới trước khi mở tài khoản, nếu không dám chắc thì hãy mở
+      tài khoản độc lập.
+  utter_def.trade_method:
+  - text: 'Về hình thức có thể tự đầu tư hoặc ủy thác đầu tư cho những tổ chức, cá
+      nhân giàu kinh nghiệm. Về phương pháp: Ở đây có rất nhiều phương pháp chọn cổ
+      phiếu.'
+  utter_def.account_oct:
+  - text: Dịch vụ chuyển tiền trực tuyến OCT là dịch vụ hỗ trợ chuyển khoản, cho phép
+      bạn chuyển tiền từ tài khoản chứng khoán đến các tài khoản ngân hàng đã được
+      đăng ký với công ty CK qua cổng giao dịch trực tuyến và không cần đến trực tiếp
+      công ty CK để thực hiện giao dịch chuyển khoản.
+  utter_def.account_foreign_requirement:
+  - text: "Bản sao Hộ chiếu có công chứng: 01 bản \nLý lịch tư pháp [Hợp pháp hóa\
+      \ lãnh sự] \nBản sao công chứng CMND/Hộ chiếu người đại diện giao dịch (nếu\
+      \ có) \nLý lịch tư pháp người đại diện giao dịch (nếu có)"
+  utter_fallback:
+  - text: Xin lỗi, MAI chưa hiểu, bạn có thể nói rõ hơn không
+  utter_chat.bot_why_name_mai:
+  - text: MAI là viết tắt cho My Artificial Intelligence, nhưng nghe MAI ngắn gọn
+      và đáng yêu hơn nhiều hihi
+  utter_def.stock_index_fund:
+  - text: Quỹ chỉ số (index fund) là loại hình quỹ hỗ tương mua tất cả các cổ phiếu
+      trong một loại chỉ số chứng khoán nhất định, ví dụ VN30 bao gồm 30 cổ phiếu
+      có vốn hóa lớn trên Sở giao dịch Chứng Khoán – TPHCM
+  utter_def.stock_exchange_hose:
+  - text: HOSE là viết tắt của Ho Chi Minh Stock Exchange – Sở Giao dịch Chứng khoán
+      Thành phố Hồ Chí Minh – là một đơn vị trực thuộc Ủy ban Chứng khoán Nhà nước
+      và quản lý hệ thống giao dịch chứng khoán niêm yết của Việt Nam.
+  utter_def.stock_vn30:
+  - text: Vn30 là số nhóm các cổ phiếu có vốn hóa lớn trong bộ chỉ số được Sở giao
+      dịch Chứng Khoán – TPHCM triển khai ngày 6/2/2012, với mục đích tổng hợp các
+      mã cổ phiếu hàng đầu trên thị trường chứng khoán Việt Nam, về giá trị vốn hóa
+      và thanh khoản.
+actions:
+- action_stock_price
+- action_trading_portfolio
+- action_trading_orderbook
+- action_get_news
+- utter_greet
+- utter_chat.bot_why_name_mai
+- utter_def.stock_index_fund
+- utter_def.stock_exchange_hose
+- action_get_vn30
+- action_get_watchlist
